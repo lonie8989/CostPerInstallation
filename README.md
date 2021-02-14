@@ -25,3 +25,9 @@ python3 manage.py sqlmigrate polls 0001 # 만들어진 entity file를 이용, �
 ```shell
 python3 manage.py shell
 ```
+
+## Create an admin User
+
+```shell
+python3 manage.py createsuperuser
+```

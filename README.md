@@ -23,11 +23,17 @@ python3 manage.py sqlmigrate polls 0001 # 만들어진 entity file를 이용, �
 ## invoke Python shell
 
 ```shell
-python3 manage.py shell
+python3 manage.py shell # for manual 
 ```
 
 ## Create an admin User
 
 ```shell
 python3 manage.py createsuperuser
+```
+
+## Testing in Django
+
+```shell
+python3 manage.py test polls
 ```

@@ -81,7 +81,7 @@ DATABASES = {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             'isolation_level': 'read committed',
             'host': 'localhost',
-            'database': 'costperinstallation',
+            'database': 'costperinstallationtest',
             'user': 'root'
         },
     }

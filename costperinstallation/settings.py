@@ -75,14 +75,25 @@ WSGI_APPLICATION = 'costperinstallation.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'OPTIONS': {
+    #         'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+    #         'isolation_level': 'read committed',
+    #         'host': 'localhost',
+    #         'database': 'costperinstallation',
+    #         'user': 'root'
+    #     },
+    # },
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             'isolation_level': 'read committed',
-            'host': 'localhost',
+            'host': 'Ronnie89.mysql.pythonanywhere-services.com',
             'database': 'costperinstallation',
-            'user': 'root'
+            'user': 'Ronnie89',
+            'password': 'MySql246!'
         },
     }
 }

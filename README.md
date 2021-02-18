@@ -3,7 +3,7 @@
 ## Create a project
 
 ```shell
-django-admin startproject mysite
+django-admin startproject polls
 ```
 
 ## running project
@@ -74,3 +74,26 @@ Uninstalling django-polls-0.1:
 Proceed (y/n)? y
   Successfully uninstalled django-polls-0.1
 ```
+
+## Deploy app into pythonanywhere
+
+1. Upload Code from Github
+
+```shell
+git clone <github_url>
+```
+
+1. Create a virtualenv and install Django and any other requirements
+
+```shell
+mkvirtualenv --python=/usr/bin/python3.8 polls-virtualenv
+(polls-virtualenv)$ pip install django
+# or, if you have a requirements.txt:
+(polls-virtualenv)$ pip install -r requirements.txt
+```
+
+1. Setting up your Web app and WSGI file
+
+- The path to your Django project's top folder -- the folder that contains "manage.py", eg /home/Ronnie89/polls
+- The name of your project (that's the name of the folder that contains your settings.py), eg polls
+- The name of your virtualenv, eg polls-virtualenv

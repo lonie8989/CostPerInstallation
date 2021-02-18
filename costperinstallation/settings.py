@@ -92,7 +92,7 @@ DATABASES = {
         'NAME': 'Ronnie8989$costperinstallation',
         'HOST': 'Ronnie89.mysql.pythonanywhere-services.com',
         'USER': 'Ronnie89',
-        'PASSWORD': 'MySql246!',
+        'PASSWORD': '12341234',
     }
 }
 

@@ -87,14 +87,12 @@ DATABASES = {
     # },
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-            'isolation_level': 'read committed',
-            'host': 'Ronnie89.mysql.pythonanywhere-services.com',
-            'database': 'costperinstallation',
-            'user': 'Ronnie89',
-            'password': 'MySql246!'
-        },
+        # 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        # 'isolation_level': 'read committed',
+        'NAME': 'Ronnie8989$costperinstallation',
+        'HOST': 'Ronnie89.mysql.pythonanywhere-services.com',
+        'USER': 'Ronnie89',
+        'PASSWORD': 'MySql246!',
     }
 }
 

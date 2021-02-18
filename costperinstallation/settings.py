@@ -89,7 +89,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         # 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         # 'isolation_level': 'read committed',
-        'NAME': 'Ronnie8989$costperinstallation',
+        'NAME': 'Ronnie89$costperinstallation',
         'HOST': 'Ronnie89.mysql.pythonanywhere-services.com',
         'USER': 'Ronnie89',
         'PASSWORD': '12341234',

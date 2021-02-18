@@ -1,5 +1,11 @@
 # Test_Django
 
+## Create a project
+
+```shell
+django-admin startproject mysite
+```
+
 ## running project
 
 ```shell
@@ -23,7 +29,7 @@ python3 manage.py sqlmigrate polls 0001 # 만들어진 entity file를 이용, �
 ## invoke Python shell
 
 ```shell
-python3 manage.py shell # for manual 
+python3 manage.py shell # for manual
 ```
 
 ## Create an admin User
@@ -36,4 +42,35 @@ python3 manage.py createsuperuser
 
 ```shell
 python3 manage.py test polls
+```
+
+## Packaging app
+
+- ref <https://docs.djangoproject.com/en/3.1/intro/reusable-apps/>
+
+```shell
+python3 setup.py sdist
+python3 -m pip install --user django-polls/dist/django-polls-0.1.tar.gz
+python3 -m pip uninstall django-polls
+```
+
+### result
+
+```shell
+[13:56][NamgiuicBookPro ~/Desktop/GitHub/django-polls]
+# python3 -m pip install --user dist/django-polls-0.1.tar.gz
+Processing ./dist/django-polls-0.1.tar.gz
+Using legacy 'setup.py install' for django-polls, since package 'wheel' is not installed.
+Installing collected packages: django-polls
+    Running setup.py install for django-polls ... done
+Successfully installed django-polls-0.1
+[13:57][NamgiuicBookPro ~/Desktop/GitHub/django-polls]
+# python3 -m pip uninstall django-polls
+Found existing installation: django-polls 0.1
+Uninstalling django-polls-0.1:
+  Would remove:
+    /Users/lonie/Library/Python/3.9/lib/python/site-packages/django_polls-0.1-py3.9.egg-info
+    /Users/lonie/Library/Python/3.9/lib/python/site-packages/polls/*
+Proceed (y/n)? y
+  Successfully uninstalled django-polls-0.1
 ```

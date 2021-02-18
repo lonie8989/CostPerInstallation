@@ -97,3 +97,22 @@ mkvirtualenv --python=/usr/bin/python3.8 polls-virtualenv
 - The path to your Django project's top folder -- the folder that contains "manage.py", eg /home/Ronnie89/polls
 - The name of your project (that's the name of the folder that contains your settings.py), eg polls
 - The name of your virtualenv, eg polls-virtualenv
+
+> case sensitive: path를 잘 봐야한다.
+
+1. Using MySQL
+
+```shell
+mysql -u USERNAME -h HOSTNAME -p 'USERNAME$DATABASENAME'
+
+# Django 사용시 > project.setting.py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '<your_username>$<your_database_name>',
+        'USER': '<your_username>',
+        'PASSWORD': '<your_mysql_password>',
+        'HOST': '<your_mysql_hostname>',
+    }
+}
+```

@@ -116,3 +116,11 @@ DATABASES = {
     }
 }
 ```
+
+1. Deployment Static Files
+
+```shell
+STATIC_URL = '/static/'
+STATIC_ROOT = "/var/www/ronnie89.pythonanywhere.com/static/"
+python3 manage.py collectstatic
+```

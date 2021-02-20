@@ -1,5 +1,16 @@
 # Test_Django
 
+## environment
+
+```shell
+python3 --version
+# Python 3.9.1
+python3 -m django --version
+# 3.1.6
+mysql --version
+# mysql  Ver 8.0.23 for osx10.16 on x86_64 (Homebrew)
+```
+
 ## Create a project
 
 ```shell

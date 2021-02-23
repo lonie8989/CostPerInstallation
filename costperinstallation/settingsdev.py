@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cpi.apps.CpiConfig'
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,7 @@ DATABASES = {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             'isolation_level': 'read committed',
             'host': 'localhost',
-            'database': 'costperinstallation',
+            'database': 'cpi',
             'user': 'root'
         },
     },

@@ -33,8 +33,14 @@ python3 manage.py startapp polls
 
 ```shell
 python3 manage.py migrate # 현재 있는 entity를 db에 migrate
-python3 manage.py makemigrations polls #  setting.py > INSTALLED_APPS: polls label을 migration하기 위한 entity file 생성
-python3 manage.py sqlmigrate polls 0001 # 만들어진 entity file를 이용, 연결된 SQL에 맞는 query를 생성
+python3 manage.py makemigrations cpi #  setting.py > INSTALLED_APPS: polls label을 migration하기 위한 entity file 생성
+python3 manage.py sqlmigrate cpi 0001 # 만들어진 entity file를 이용, 연결된 SQL에 맞는 query를 생성
+```
+
+## MySql Schema to Django model
+
+```shell
+python3 manage.py inspectdb
 ```
 
 ## invoke Python shell
